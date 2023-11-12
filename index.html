@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VidTube</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-8sCpFZyByBv8VYHTLALKqcM/TEwGXl8F8/0GkFlzAvr8Aw9Ihd7Mz2fuGdCkPZbQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="flex-div">
+        <div class="nav-left flex-div">
+            <img src="./images/menu.png" class="menu-icon flex-div">
+            <a href="./index.html"><img src="./images/logo.png" class="logo flex-div"></a>
+        </div>
+        <div class="nav-middle flex-div">
+            <div class="search-box flex-div">
+                <input type="text" placeholder="Search">
+                <img src="./images/search.png">
+            </div>
+            <img  width="24" height="24" src="https://img.icons8.com/android/24/microphone.png" alt="microphone"/>
+        </div>
+        <div class="nav-right flex-div">
+            <img src="./images/upload.png">
+    
+            <img src="./images/notification.png">
+            <img src="./images/sukru.png" class="user-icon">
+        </div>
+
+    </nav>
+
+
+    
+    <div class="filter-container">
+        <div class="filter-option active">Tümü</div>
+        <div class="filter-option">Animasyon</div>
+        <div class="filter-option">Oyun</div>
+        <div class="filter-option">Web tasarım</div>
+        <div class="filter-option">Yemek pişirme programları</div>
+        <div class="filter-option">Görsel sanatlar</div>
+        <div class="filter-option">Futbol</div>
+        <div class="filter-option">Aksiyon-macera oyunları</div>
+        <div class="filter-option">Son yüklenenler</div>
+        <div class="filter-option">Yeni öneriler</div>
+    </div>
+
+
+
+
+
+    
+
+    <!-----------------------------------------side bar------------------------------------>
+    <div class="sidebar">
+        <div class="shortcut-links">
+            <a href=""><img src="./images/icons8-home-50.png"><p class="color1">Ana Sayfa</p>
+                
+                
+                <a href=""><img src="./images/icons8-youtube-shorts-50.png"> <p>Shorts</p>
+                    <a href=""><img src="./images/icons8-youtube-50.png"> <p>Abonelikler</p>
+                        <a href=""><img src="./images/icons8-youtube-music-50 (2).png"> <p>Youtube Music</p>       
+                </div>
+                   
+        <hr> <br>
+        <div class="shortcut-links">
+            <a href=""><img src="./images/icons8-history-50.png"> <p>Geçmiş</p>
+               
+            </a>
+            <a href=""><img src="./images/Youtube Music.png" alt="">
+                <p>Youtube Music</p>
+            </a>
+            <a href=""><img src="./images/subscriprion.png" alt="">
+                <p>Subscription</p>
+            </a>
+            <a href=""><img src="./images/library.png" alt="">
+                <p>Library</p>
+            </a>
+            <a href=""><img src="./images/history.png" alt="">
+                <p>History</p>
+            </a>
+            
+            
+                <div class="sidebar-showmore">
+                    <!-- ... Diğer sidebar içeriği ... -->
+                
+                    <button id="show-more-button">
+                        <i id="icon" class="fa-solid fa-chevron-down"></i>
+                        <span id="button-text">Daha fazla göster</span>
+                    </button>
+                
+                    <div id="content" style="display: none;">
+                        <a href=""><img src="./images/subscriprion.png" alt="">
+                            <p class="color1"> Subscription</p>
+                        </a>
+                        <a href=""><img src="./images/library.png" alt="">
+                            <p>Library</p>
+                        </a>
+                        <a href=""><img src="./images/history.png" alt="">
+                            <p>History</p>
+                        </a>
+                        <a href=""><img src="./images/playlist.png" alt="">
+                            <p>Playlist</p>
+                        </a>
+                        <a href=""><img src="./images/messages.png" alt="">
+                            <p>Messages</p>
+                        </a>
+                    </div>
+                </div>
+                
+                
+
+                <hr />
+            
+              
+        </div>
+        <div class="subscribed-list">
+            <h3>SUBSCRIBED</h3>
+            <a href=""> <img src="images/tom simson.png">
+                <p>Tom Simson</p>
+            </a>
+            <a href=""> <img src="./images/simon.png">
+                <p>Simon Baker</p>
+            </a>
+            <a href=""> <img src="./images/tom.png">
+                <p>Tom Hardy</p>
+            </a>
+            <a href=""> <img src="./images/megan.png">
+                <p>Megan Ryan</p>
+            </a>
+            <a href=""> <img src="./images/cameron.png">
+                <p>Cameron Diaz</p>
+            </a>
+            <a href=""> <img src="./images/cameron.png">
+                <p>Cameron Diaz</p>
+            </a>
+            <a href=""> <img src="./images/cameron.png">
+                <p>Cameron Diaz</p>
+                
+            </a>
+        </div>
+    </div>
+
+    <!-- ----main---- -->
+    <div class="container">
+        
+        <div class="list-container">
+            <div class="vid-list">
+                <a href="images/build.com.mp4">
+                    <img src="./images/buildcon.png" class="thumbnail" style="height: 160px; width: 275px;">
+                </a>
+                <div class="flex-div">
+                    <img src="./images/sukru.png">
+                    <div class="vid-info">
+                        <a href="images/build.com.mp4">BUILDCON</a>
+                        <p>Şükrü Güngör</p>
+                        <p>1M views &bull; 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vid-list">
+                <a href="images/Coffee.com.mp4">
+                    <img src="./images/coffe.png" class="thumbnail" style="height: 160px; width: 275px;">
+                </a>
+                <div class="flex-div">
+                    <img src="./images/sukru.png">
+                    <div class="vid-info">
+                        <a href="images/build.com.mp4">Coffe-Shop</a>
+                        <p>Şükrü Güngör</p>
+                        <p>4M views &bull; 4 days ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vid-list">
+                <a href="images/PAYLAŞTIKÇA.COM (online-video-cutter.com) (1).mp4">
+                    <img src="./images/paylastıkca.png" class="thumbnail" style="height: 160px; width: 275px;">
+                </a>
+                <div class="flex-div">
+                    <img src="./images/sukru.png">
+                    <div class="vid-info">
+                        <a href="images/PAYLAŞTIKÇA.COM (online-video-cutter.com) (1).mp4">Paylaştıkça</a>
+                        <p>Şükrü Güngör</p>
+                        <p>4M views &bull; 1 weak ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="images/RESTAURANT WEB (online-video-cutter.com).mp4">
+                    <img src="./images/restaurat.png" class="thumbnail" style="height: 160px; width: 275px;">
+                </a>
+                <div class="flex-div">
+                    <img src="./images/sukru.png">
+                    <div class="vid-info">
+                        <a href="images/RESTAURANT WEB (online-video-cutter.com).mp4">restaurat-web-site</a>
+                        <p>Şükrü Güngör</p>
+                        <p>4M views &bull; 2 weak ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vid-list">
+                <a href="images/shoe.png">
+                    <img src="./images/shoe.png" class="thumbnail" style="height: 160px; width: 275px;">
+                </a>
+                <div class="flex-div">
+                    <img src="./images/sukru.png">
+                    <div class="vid-info">
+                        <a href="images/shoe.png">Shoe Page</a>
+                        <p>2M views &bull; 4 weak ago</p>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="vid-list">
+                <a href="images/cars.png">
+                    <img src="./images/cars.png" class="thumbnail" style="height: 160px; width: 275px;">
+                </a>
+                <div class="flex-div">
+                    <img src="./images/sukru.png">
+                    <div class="vid-info">
+                        <a href="images/cars.png">Cars Html Css Design</a>
+                        <p>2M views &bull; 5 weak ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vid-list">
+                <a href="">
+                    <img src="./images/thumbnail7.png" class="thumbnail">
+                </a>
+                <div class="flex-div">
+                    <img src="./images/cameron.png">
+                    <div class="vid-info">
+                        <a href="">Just Another Vlog</a>
+                        <p>Cameron Diaz</p>
+                        <p>1M views &bull; 5 weak ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vid-list">
+                <a href="">
+                    <img src="./images/thumbnail8.png" class="thumbnail">
+                </a>
+                <div class="flex-div">
+                    <img src="./images/tom simson.png">
+                    <div class="vid-info">
+                        <a href="">Just Another Vlog</a>
+                        <p>Top Simson</p>
+                        <p>1M views &bull; 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vid-list">
+                <a href="">
+                    <img src="./images/thumbnail3.png" class="thumbnail">
+                </a>
+                <div class="flex-div">
+                    <img src="./images/megan.png">
+                    <div class="vid-info">
+                        <a href="">Just Another Vlog</a>
+                        <p>Megan Ryan</p>
+                        <p>1M views &bull; 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vid-list">
+                <a href="">
+                    <img src="./images/thumbnail2.png" class="thumbnail">
+                </a>
+                <div class="flex-div">
+                    <img src="./images/tom.png">
+                    <div class="vid-info">
+                        <a href="">Just Another Vlog</a>
+                        <p>Cameron Diaz</p>
+                        <p>1M views &bull; 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="">
+                    <img src="./images/thumbnail5.png" class="thumbnail">
+                </a>
+                <div class="flex-div">
+                    <img src="./images/woman-1.jpg">
+                    <div class="vid-info">
+                        <a href="">Just Another Vlog</a>
+                        <p>Emma Watson</p>
+                        <p>1M views &bull; 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href="">
+                    <img src="./images/thumbnail1.png" class="thumbnail">
+                </a>
+                <div class="flex-div">
+                    <img src="./images/simon.png">
+                    <div class="vid-info">
+                        <a href="">Just Another Vlog</a>
+                        <p>Simon Baker</p>
+                        <p>1M views &bull; 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+    </div>
+
+<!-- HTML'nin sonunda bu kodu ekleyin -->
+<div class="user-profile">
+   
+    <p>deneme@deneme.com</p>
+    <ul>
+        <li><a href="#"><i class="fa-brands fa-google"></i>Google Account</a></li>
+        <li><a href="#"><i class="fa-solid fa-circle-user"></i>CHANGE ACCOUNT</a></li>
+        <li><a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>LOG OUT</a></li>
+
+        <HR></HR>
+        <li><a href="#"><i class="fa-brands fa-youtube"></i>Youtube Studio</a></li>
+        <li><a href="#"><i class="fa-sharp fa-solid fa-p" style="color: #e20808;"></i>Your Premium Benefits</a></li>
+        <li><a href=""><i class="fa-solid fa-dollar-sign"></i>Purchases and memberships</a></li>
+    </ul>
+</div>
+
+
+
+    
+
+  
+          
+    
+    
+    
+    <script src="script.js"></script>
+  
+
+
+
+
+  </body>
+</html>
